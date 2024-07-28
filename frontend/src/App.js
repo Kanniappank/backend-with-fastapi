@@ -17,7 +17,7 @@ function App() {
       alert(data.error);
       return;
     }
-    setCandySet(data);
+    setCandySet(data.candies);
     setBiteable(true);
   };
 

@@ -10,6 +10,7 @@ export const getCandies = async (candySetId) => {
   if (!response.ok) {
     return { error: "Candy set not found! is your backend running" };
   }
+  console.log('url',`${API_URL}/candies/${candySetId}`)
   return response.json();
 };
 
